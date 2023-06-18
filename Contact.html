@@ -9,7 +9,7 @@
     <h1>Contact me!</h1>
     <fieldset>
         <legend>Personal Information</legend>
-    <form action = "mailto:mshirish2002@gmail.com" method = "post">
+    <form action = "mailto:mshirish2002@gmail.com" enctype="text/plain" method = "post">
         <p>
             <label for = "email">Email: </label>
             <input type = "email" id = "email" name="email">
@@ -23,8 +23,38 @@
         <p> 
             <h4>Gender</h4>
             <label for = "male">Male</label>
+            <input type = "radio" id = "male" name="male">
+            <label for = "female">female</label>
             <input type = "radio" id = "female" name="female">
         </p>
+
+        <p>
+            <h4>Select your Hobby</h4>
+            <label for = "dance">Dance</label>
+            <input type = "checkbox" id = "dance" name = "dance">
+            <label for = "sing">Sing</label>
+            <input type = "checkbox" id = "sing" name = "sing">
+        </p>
+
+        <p>
+            <h4>Select your Favourite Coffee</h4>
+            <select name = "coffee" id = "coffee">
+                <optgroup label = "hard coffee">
+                    <option value = "espresso">Espresso</option>
+                    <option value = "latte">Latte</option>
+                </optgroup>
+                <optgroup label = "soft coffee">
+                    <option value = "americano">Americano</option>
+                    <option value = "cappuchino">Cappuchino</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <h4>Message</h4>
+            <textarea name = "msg" id = "msg" cols = "40" rows = "10"></textarea>
+        </p>
+
         <button type = "submit">Submit</button>
         <button type = "reset">Reset</button>
     </form>
